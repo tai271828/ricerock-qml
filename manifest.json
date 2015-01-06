@@ -1,0 +1,17 @@
+{
+    "name": "com.ubuntu.developer.taihsiangho.ricerock-1st",
+    "description": "description of ricerock-1st",
+    "architecture": "all",
+    "title": "ricerock-1st",
+    "hooks": {
+        "app": {
+            "apparmor": "app.apparmor",
+            "desktop":  "app.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Taihsiang Ho <taihsiang.ho@canonical.com>",
+    "framework" : "ubuntu-sdk-14.04"
+}
+
+

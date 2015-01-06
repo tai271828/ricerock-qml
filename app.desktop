@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=app
+Exec=qmlscene $@ main.qml
+Icon=ricerock-1st.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+
