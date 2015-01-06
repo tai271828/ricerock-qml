@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-06 22:29+0800\n"
+"POT-Creation-Date: 2015-01-06 22:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: main.qml:29
-msgid "Simple"
+msgid "Rice Rock"
 msgstr ""
 
 #: main.qml:42
-msgid "Hello.."
+msgid "Rice Rock QML: Porting ricerock written in simplegui to qml"
 msgstr ""
 
 #: main.qml:49
-msgid "Tap me!"
+msgid "Game Restart"
 msgstr ""
 
 #: main.qml:52
