@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import Ubuntu.Components 1.1
+import Ubuntu.Components 0.1
 import io.thp.pyotherside 1.0
 
 /*!
@@ -29,7 +29,7 @@ MainView {
         title: i18n.tr("Rice Rock")
 
         Column {
-            spacing: units.gu(1)
+            spacing: units.gu(2)
             anchors {
                 margins: units.gu(2)
                 fill: parent
@@ -43,6 +43,7 @@ MainView {
             }
 
             Button {
+                id: button_reset
                 objectName: "button"
                 width: parent.width
 
@@ -89,19 +90,15 @@ MainView {
 
                 Image {
                     id:debri
-                    width: parent.width
-                    /*
-                    anchors {
-                        top: parent.top
-                        left: parent.left
-                    }
-                    */
+                    x: 80
+                    y: 60
 
                     source: "./data/image/debris2_blue.png"
 
                     SequentialAnimation {
                         running: true
-                        NumberAnimation { target: debri; property: "x"; to: 750; duration: 5000 }
+                        NumberAnimation { target: debri; property: "x"; to: nebula.width - debri.width; duration: 1000 }
+                        loops: Animation.Infinite
                     }
 
                 }
@@ -112,4 +109,5 @@ MainView {
     }
 
 }
+
 
