@@ -12,9 +12,13 @@ Image {
 
         source: "./data/image/debris2_blue.png"
 
-        SequentialAnimation {
+        NumberAnimation {
             running: true
-            NumberAnimation { target: debri; property: "x"; to: nebula.width - debri.width; duration: 1000 }
+            target: debri
+            property: "x"
+            from: -nebula.width
+            to: nebula.width
+            duration: 36000
             loops: Animation.Infinite
         }
 
