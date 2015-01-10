@@ -7,25 +7,16 @@ Rectangle {
     color: activePalette.window
     anchors.bottom: screen.bottom
 
-    ButtonNewgame {
+    Button {
         id: button_newgame
-        anchors { left: parent.left; verticalCenter: parent.verticalCenter; margins: 5}
+        anchors {top: parent.top; left: parent.left; verticalCenter: parent.verticalCenter; margins: 5}
         text: "New Game"
-        onClicked: console.log("This doesn't do anything yet...")
-    }
-
-    Button{
-        anchors { top: parent.top; left: button_newgame.right; verticalCenter: parent.verticalCenter; margins: 5}
-        text: "New Game"
-        onClicked: console.log("This doesn't do anything yet...")
     }
 
     Text {
         id: score
-        anchors { right: parent.right; verticalCenter: parent.verticalCenter }
+        anchors { right: parent.right; verticalCenter: parent.verticalCenter; margins: 5 }
         text: "Score: Who knows?"
     }
-
-
 
 }
