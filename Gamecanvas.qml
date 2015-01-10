@@ -1,14 +1,21 @@
 import QtQuick 2.0
 
-Image {
-    id: nebula
-    //width: parent.width
-    source: "./data/image/nebula_blue.f2014.png"
+Item {
+
+    width: parent.width
+    anchors { top: parent.top; bottom: toolBar.top }
+
+    Image {
+        id: nebula
+        anchors.fill: parent
+        source: "./data/image/nebula_blue.f2014.png"
+        fillMode: Image.PreserveAspectCrop
+    }
 
     Image {
         id:debri
-        x: 80
-        y: 60
+        width: parent.width
+        height: parent.width*3/4
 
         source: "./data/image/debris2_blue.png"
 
@@ -22,7 +29,7 @@ Image {
             loops: Animation.Infinite
         }
 
-    }
+   }
 
 }
 
