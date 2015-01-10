@@ -8,9 +8,12 @@ Rectangle {
 
     SystemPalette { id: activePalette }
 
-    Gamecanvas {}
+    Gamecanvas {
+        Statusbar {
+        }
+    }
 
-    Toolbar{id: toolBar}
+    //Toolbar{id: toolBar}
 
 }
 

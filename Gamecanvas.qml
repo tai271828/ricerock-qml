@@ -3,7 +3,9 @@ import QtQuick 2.0
 Item {
 
     width: parent.width
-    anchors { top: parent.top; bottom: toolBar.top }
+    // if you want to use toolBar, comment out this line
+    //anchors { top: parent.top; bottom: toolBar.top }
+    anchors.fill: parent
 
     Image {
         id: nebula
